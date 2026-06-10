@@ -1,0 +1,61 @@
+DAY 1:-
+
+AWS AND DEVOPS :
+
+DevOps is a practice that combines development and operations to build, test and release software faster and more reliably. 
+It focuses on automation, collaboration and continuous delivery to improve software quality and speed.
+
+Helps teams release software faster with automation
+Reduces manual errors and improves reliability
+Enables continuous integration and deployment
+Improves collaboration between development and operations teams
+
+* Cloud computing is the delivery of on-demand computing services—including servers, storage, databases, networking, and software—over the internet.
+* CLOUD COMPUTING CONSITS OF 3 TYPES OF MODELS AND SETVICES:-
+
+They are:
+* SAAS  - SOFTWARE AS A SERVICE    EXAMPLE:- AWS,AZURE
+* PAAS  - PLATFORM AS A SERVICE    EXAMPLE:- Google App Engine, Heroku
+* IAAS  - INFRASTRUCTURE AS A SERVICE  EXAMPLE:- Salesforce, Google Workspace, Microsoft 365.
+
+* PUBLIC CLOUD  ---> AMAMZON EC2,IBM CLOUD,GCP
+* PRIVATE CLOUD  --> OpenStack, Cisco Secure Cloud, Dell Cloud SolutionS
+* HYBRID CLOUD  ---> Google Anthos, IBM Cloud Satellite, Oracle
+
+=======================================================================================
+
+Software Development Life Cycle (SDLC):
+
+The Software Development Life Cycle (SDLC) is a structured process used to plan, design, develop, test, deploy, and maintain software. 
+It ensures a systematic workflow and helps align software development.
+They are 7 pahses avaible in sdlc
+* PLAN
+* CODE
+* BUILD      ---> DEVELOPER
+* TEST
+
+* OPERTE
+* MONITOR    ---> OPERATIONS
+* DEPLOY
+=================================================================================
+
+Linux
+Linux is widely used in servers and cloud environments. This section covers essential commands, system operations, and networking basics required for DevOps
+* FILE PERMISSIONS
+* USER MANAGEMENT
+* SYSTEM MONTORING
+* TROUBLESHOOTING
+* NETWORKING
+
+--> PROVIDED NOTES BASED ON ABOVE DISCUSSION THEORY
+
+DEVOPS TOOLS:-
+
+* GIT & GITHUB   --> SOURCE CODE MANAGEMENT
+* JENKINS        --> CI/CD INTEGRATION FOR AUTOAMTION
+* MAVEN          --> WORKS AS ARTIFACTORY AND DEPENDECIES
+* DOCKER         --> CONTAINERZATION
+* KUBERNETES     --> ORCHESTRATION
+* TERRAFORM      --> CREATE A INFRASTURCURE IAAC
+* PROMETHEUS & GRAFANA --> MONITORING TOOLS CHECKONG SERVER DATA
+* KIBANA            ---> INSOECTING LOGS AND METRICS
