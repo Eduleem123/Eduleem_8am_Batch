@@ -59,3 +59,64 @@ DEVOPS TOOLS:-
 * TERRAFORM      --> CREATE A INFRASTURCURE IAAC
 * PROMETHEUS & GRAFANA --> MONITORING TOOLS CHECKONG SERVER DATA
 * KIBANA            ---> INSpECTING LOGS AND METRICS
+
+============================================================================================================
+
+DAY-2:-
+
+Amazon Web Services (AWS)
+
+AWS is Amazon’s leading cloud platform, offering 200+ managed services on secure, globally distributed, highly available infrastructure,
+It’s trusted worldwide to build, run and scale everything from simple websites to enterprise systems
+
+Widely used by top companies and startups globally.
+Powers major services like Netflix, LinkedIn, NASA.
+Offers hands-on cloud experience with real infrastructure.
+Scalable, secure, and cost-effective platform to build apps.
+In 2006, Amazon Web Services (AWS) introduced IT services in the market through web services, which is now known as cloud computing.
+
+AWS SERVICES:-
+
+VPC - VIRTUAL PRIVATE NETWORK
+EC2 - CLOUD COMPUTE SERVICE
+S3  - TO STORE OJECTS AND DATA
+ELB - TO CONTROL TRAFFIC INBOUND AND OUTBOUND RULES
+ASG - A GROUP OF INSTANCES
+CLOUD WATCH - TO MONITOR SERVERS FOR LOGS AND METRICS
+CLOUDFRONT - TO CREATE DISTRUBTIIN FOR APPLICATION(EDGE LOCATIONS)
+SNS,SES   - TO SIMPLE MAIL NOTIFICATIONS
+LAMBDA   - SERVERLESS SERVER
+
+=======================================================================
+
+1. VPC - ISOLATED PUBLIC AND PRIVATE NETWORK
+
+Amazon Virtual Private Cloud (VPC) is the fundamental networking layer for your cloud infrastructure. 
+It allows you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. 
+A VPC works like a private network in the cloud for your AWS resources.
+where you can control IP address range, subnets, routing, and network access for your AWS 
+
+STEP BY STEP TO SETUP VPC IN AWS CONSOLE:
+
+1. VPC
+A Virtual Private Cloud is a logically isolated network in AWS used to launch, secure, and connect resources.
+Each VPC is defined by an IPv4 CIDR block that specifies the private IP address range available to resources.
+
+2. Subnets
+A Subnet is a segment of a VPC’s IP address range that resides entirely within a single Availability Zone (AZ).
+SUBNETS TYPICALLY 2 TYPES:-
+PUBLIC SUBNET.
+PRIVATE SUBNET.
+Public Subnets, which route internet-bound traffic through an Internet Gateway (IGW).
+Private Subnets, which are isolated from direct internet access and communicate externally through a NAT Gateway.
+
+3. Route Tables
+Each VPC contains an implicit virtual router that relies on Route Tables to direct traffic. 
+Every subnet must be associated with exactly one route table, and each route defines:
+A destination CIDR block (where the traffic is headed).
+A target (where the traffic should be sent, such as an Internet Gateway, NAT Gateway, or another instance).
+
+4. Internet Gateway(IGW)
+An Internet Gateway enables bidirectional communication between a VPC’s public subnets and the internet and is horizontally scaled and redundant.
+Attaching an IGW to a VPC and adding a 0.0.0.0/0 route to it in a public subnet’s route table allows instances in that subnet to access the internet.
+
