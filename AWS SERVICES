@@ -1,0 +1,64 @@
+AWS SERVICES:-
+
+VPC :- VIRTUAL PRIVATE CLOUD
+Amazon VPC - Introduction to Amazon Virtual Private Cloud
+Amazon Virtual Private Cloud (VPC) is the fundamental networking layer for your cloud infrastructure. 
+It allows you to provision a logically isolated section of the AWS Cloud
+you can control IP address range, subnets, routing, and network access for your AWS resources.
+
+1. VPC
+A Virtual Private Cloud is a logically isolated network in AWS used to launch, secure, and connect resources.
+Each VPC is defined by an IPv4 CIDR block that specifies the private IP address range available to resources.
+It works like a private data center in the cloud while providing the scalability, flexibility, and reliability of AWS.
+
+2. Subnets
+A Subnet is a segment of a VPC’s IP address range that resides entirely within a single Availability Zone (AZ).
+Subnets serve two primary purposes:
+Public Subnets : which route internet-bound traffic through an Internet Gateway (IGW).
+Private Subnets : which are isolated from direct internet access and communicate externally through a NAT Gateway.
+
+3. Route Tables
+Each VPC contains an implicit virtual router that relies on Route Tables to direct traffic. Every subnet must be associated with exactly one route table, and each route defines:
+A destination CIDR block (where the traffic is headed).
+A target (where the traffic should be sent, such as an Internet Gateway, NAT Gateway, or another instance).
+Route tables determine whether traffic remains internal to the VPC or is sent to external networks. They are the digital roadmap of the cloud network.
+
+4. Network Access Control Lists
+NACLs are stateless firewalls that control inbound and outbound traffic at the subnet level.
+They check each packet separately without remembering previous traffic information.
+Every VPC has a default NACL that can be modified but not deleted.
+Rules must be explicitly defined for both inbound and outbound traffic.
+NACLs are used to apply security rules at the subnet level, such as blocking specific IP addresses or controlling access across multiple resources.
+
+5. Internet Gateway(IGW)
+An Internet Gateway enables bidirectional communication between a VPC’s public subnets and the internet and is horizontally scaled and redundant.
+Attaching an IGW to a VPC and adding a 0.0.0.0/0 route to it in a public subnet’s route table allows instances in that subnet to access the internet.
+A VPC can have only one Internet Gateway, and without it, instances cannot directly communicate with the public internet.
+
+6. Network Address Translation (NAT)
+NAT Gateways allow instances in private subnets to initiate outbound internet connections while blocking unsolicited inbound traffic.
+They enable secure communication with external services without exposing private resources to the internet.
+NAT Gateways are typically placed in public subnets and act as controlled egress points for private subnets.
+
+7. Security Groups
+Security Groups are stateful firewalls that operate at the instance level, while NACLs operate at the subnet level.
+They define granular inbound rules based on IP ranges, ports, and protocols, and automatically allow return traffic for initiated connections.
+Security Groups provide the primary layer of network protection for EC2, RDS, and other VPC resources.
+
+8. Classless Inter-Domain Routing (CIDR):
+CIDR notation defines the IP range of a VPC or subnet, using syntax such as 10.0.0.0/16.
+It provides flexibility in assigning and subdividing private address ranges as specified in RFC 1918, which includes:
+10.0.0.0 - 10.255.255.255 (10/8)   
+172.16.0.0 - 172.31.255.255 (172.16/12)
+192.168.0.0 - 192.168.255.255 (192.168/16)
+
+CIDR : - CLASSLESS INTER-DOMAIN ROUTING
+DEFAULT IPV4 - 32 BIT
+IPV6  -128
+
+THERE ARE 5 TYPES OF CLASSES IN CIDR
+0 - 127  - CLASS A
+128 - 191 - CLASS B
+192 - 223 - CLASS C
+224 - 240 - CLASS D
+241 -256  - CLASS E
